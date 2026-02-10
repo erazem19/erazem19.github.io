@@ -1,7 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vičtesti - Obvestilo</title>
+    <style>
+        /* Gimnazija Vič inspired palette */
+        :root {
+            --vic-blue: #1a2a44;
+            --vic-accent: #f0f4f8;
+            --text-color: #333;
+            --warning-red: #b30000;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--vic-accent);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 90%;
+            border-top: 8px solid var(--vic-blue);
+        }
+
+        header h1 {
+            color: var(--vic-blue);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        .message {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: var(--warning-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 2rem;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <div class="container">
+        <div class="status-badge">DOSTOP ONEMOGOČEN</div>
+        <header>
+            <h1>vičtesti</h1>
+        </header>
+        
+        <div class="message">
+            <p>Spletna stran <strong>vičtesti</strong> trenutno ni dostopna, saj <strong>Dijaška skupnost Gimnazije Vič (DSGV)</strong> ni poravnala denarnih obveznosti, potrebnih za vzdrževanje domene v skladu z dogovorom.</p>
+            
+            <p>Za nevšečnosti se uporabnikom opravičujemo. Spletna stran bo ponovno na voljo takoj, ko bodo vse finančne obveznosti poravnane.</p>
+        </div>
+
+        <footer>
+            &copy; 2026 vičtesti | Sistemsko obvestilo
+        </footer>
+    </div>
+
 </body>
 </html>
